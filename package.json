@@ -1,0 +1,28 @@
+{
+  "name": "fitness-macros-calculator",
+  "version": "1.0.1",
+  "description": "This is a fitness calculator for macros with three levels of fitness lose weight, get gains, or maintain fitness with protein, calories, fats, and carbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node specs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derfmilo/fitness-macros-calculator.git"
+  },
+  "keywords": [
+    "fitness",
+    "macros",
+    "calculator"
+  ],
+  "author": "Milo Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derfmilo/fitness-macros-calculator/issues"
+  },
+  "homepage": "https://github.com/derfmilo/fitness-macros-calculator",
+  "devDependencies": {
+    "jasmine-node": "~1.13.1",
+    "moment": "^2.22.0"
+  }
+}
