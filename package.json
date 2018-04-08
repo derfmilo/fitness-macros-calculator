@@ -1,6 +1,6 @@
 {
   "name": "fitness-macros-calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a fitness calculator for macros with three levels of fitness lose weight, get gains, or maintain fitness with protein, calories, fats, and carbs",
   "main": "index.js",
   "scripts": {
