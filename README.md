@@ -1,7 +1,7 @@
 # fitness-macros-calculator
-	send
-
-		var mifflin = require("fitness-macros-calculator");
+npm install fitness-macros-calculator
+	
+	var mifflin = require("fitness-macros-calculator");
  
         var sum = mifflin.macros({weight: 132,height:{ft:6,in:1},birthday:481834906});
 
