@@ -3,11 +3,11 @@ const Moment = require('moment');
 exports.macros = function(stats){
 	//lb to kg conversion
 	var nearExact = stats.weight * 0.45359237;
-    var kg = Math.floor(nearExact);
-    //Get Height conversion to cm
-    var inchvalue = parseInt(stats.height.ft) * 12 + parseInt(stats.height.in)
-    var cm = Math.floor(inchvalue*2.54);
-    //Get Age conversion in years
+    	var kg = Math.floor(nearExact);
+    	//Get Height conversion to cm
+    	var inchvalue = parseInt(stats.height.ft) * 12 + parseInt(stats.height.in)
+    	var cm = Math.floor(inchvalue*2.54);
+    	//Get Age conversion in years
 	var age = Moment().diff(stats.birthday, 'years');
 	//Run Algorith
 	var bmr = 10 * kg + 6.25 * cm - 5 * age - 161
