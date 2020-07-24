@@ -2,12 +2,24 @@ const Moment = require('moment');
 
 exports.macros = function(stats){
 	//lb to kg conversion
+	if(typeof stats.weight === 'undefined'){
+		console.log(`No Weight Value`);
+		process.exit();
+	}
+	if(typeof stats.height === 'undefined'){
+		console.log(`No Height Values`);
+		process.exit();
+	}
+	if(typeof stats.birthday === 'undefined'){
+		console.log(`No Birthdate Value`);
+		process.exit();
+	}
 	var nearExact = stats.weight * 0.45359237;
-    	var kg = Math.floor(nearExact);
-    	//Get Height conversion to cm
-    	var inchvalue = parseInt(stats.height.ft) * 12 + parseInt(stats.height.in)
-    	var cm = Math.floor(inchvalue*2.54);
-    	//Get Age conversion in years
+	var kg = Math.floor(nearExact);
+	//Get Height conversion to cm
+	var inchvalue = parseInt(stats.height.ft) * 12 + parseInt(stats.height.in)
+	var cm = Math.floor(inchvalue*2.54);
+	//Get Age conversion in years
 	var age = Moment().diff(stats.birthday, 'years');
 	//Run Algorith
 	var bmr = 10 * kg + 6.25 * cm - 5 * age - 161
