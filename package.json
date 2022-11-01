@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/derfmilo/fitness-macros-calculator",
   "devDependencies": {
-    "jasmine-node": "~1.13.1",
+    "jasmine-node": "~1.16.2",
     "moment": "^2.27.0"
   },
   "dependencies": {
